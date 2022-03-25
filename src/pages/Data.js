@@ -1,0 +1,149 @@
+import './Data.css';
+import FadeIn from "react-fade-in";
+
+const list = [
+    {
+                  
+    "date_missing": "10/30/2009", "last_name": "Sharmarice", "first_name": "Halima", "age_at_missing": "14",
+    "city": "Granger", "state": "UT", "gender": "F", "race": "W"
+    },
+    {
+    "date_missing": "10/16/2015", "last_name": "Martinez", "first_name": "Kimberly", "age_at_missing": "16",
+    "city": "West Valley City", "state": "UT",
+    "gender": "F",
+    "race": "M"
+    },
+    {
+    "date_missing": "07/23/2004", "last_name": "Gomez", "first_name": "Brenda", "age_at_missing": "3",
+    "city": "Logan",
+    "state": "UT",
+    "gender": "F",
+
+    "race": "H" },
+    {
+    "date_missing": "05/25/2003", "last_name": "Bishop", "first_name": "Acacia", "age_at_missing": "1",
+    "city": "Salt Lake City", "state": "UT",
+    "gender": "F",
+    "race": "W"
+    },
+    {
+    "date_missing": "08/03/2020", "last_name": "Salazar", "first_name": "Maria", "age_at_missing": "14",
+    "city": "Snowville",
+    "state": "UT",
+    "gender": "F",
+    "race": "H"
+    },
+    {
+    "date_missing": "04/09/2020", "last_name": "Hernandez-Soto", "first_name": "Peggy",
+
+    "age_at_missing": "6", "city": "Ogden", "state": "UT", "gender": "F",
+    "race": "H" },
+    {
+    "date_missing": "06/24/2021", "last_name": "Jimenez", "first_name": "Lucero", "age_at_missing": "14",
+    "city": "West Valley City", "state": "UT",
+    "gender": "F",
+    "race": "H"
+    },
+    {
+    "date_missing": "11/08/2013", "last_name": "Colindres-Avila", "first_name": "Yuris", "age_at_missing": "17",
+    "city": "West Valley City", "state": "UT",
+    "gender": "F",
+    "race": "M"
+    },
+
+    {
+    "date_missing": "07/15/2021", "last_name": "Harris", "first_name": "Kandis", "age_at_missing": "16",
+    "city": "Salt Lake City", "state": "UT",
+    "gender": "F",
+    "race": "W"
+    },
+    {
+    "date_missing": "07/30/2006", "last_name": "Seal", "first_name": "Jaydan", "age_at_missing": "1",
+    "city": "Garleys Wash", "state": "UT",
+    "gender": "M",
+    "race": "W"
+    },
+    {
+    "date_missing": "06/13/2018", "last_name": "Lizarraga", "first_name": "Jose", "age_at_missing": "13",
+    "city": "West Valley City", "state": "UT",
+
+    "gender": "M",
+    "race": "H" },
+    {
+    "date_missing": "04/23/2020", "last_name": "Cortez Trujillo", "first_name": "Eztli", "age_at_missing": "21",
+    "city": "North Ogden",
+    "state": "UT",
+    "gender": "M",
+    "race": "H"
+    },
+    {
+    "date_missing": "10/25/2017", "last_name": "Fowles", "first_name": "Juan", "age_at_missing": "15",
+    "city": "Lehi",
+    "state": "UT",
+    "gender": "M",
+    "race": "M"
+    },
+    {
+    "date_missing": "08/20/2012", "last_name": "Garcia",
+
+    "first_name": "Isai", "age_at_missing": "17", "city": "West Valley City", "state": "UT",
+    "gender": "M",
+    "race": "M" },
+    {
+    "date_missing": "09/01/2015", "last_name": "Smith", "first_name": "Macin", "age_at_missing": "17",
+    "city": "St. George",
+    "state": "UT",
+    "gender": "M",
+    "race": "W"
+    },
+    {
+    "date_missing": "01/26/2006", "last_name": "Sisco-Ramirez", "first_name": "Jose", "age_at_missing": "4",
+    "city": "West Valley City", "state": "UT",
+    "gender": "M",
+    "race": "M"
+    }
+
+    ];
+
+
+
+function DataPage(){
+    return(
+        <div className="content">
+            <FadeIn>
+            <b>Over 50% of identified girl victims are aged between 15 and 17 while about 40% of trafficked boys are under 12 years of age.</b> The data in the table below only reflects cases recorded in Utah.
+        <section>
+            <table>
+            <th>Date Missing</th>
+            <th>Last Name</th>
+            <th>First Name</th>
+            <th>Age at Missing</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Gender</th>
+            <th>Race</th>
+            <tbody>
+            {list.map((person) => {
+                    return (
+                    <tr>
+                        <td>{person.date_missing}</td>
+                        <td>{person.last_name}</td>
+                        <td>{person.first_name}</td>
+                        <td>{person.age_at_missing}</td>
+                        <td>{person.city}</td>
+                        <td>{person.state}</td>
+                        <td>{person.gender}</td>
+                        <td>{person.race}</td>
+                    </tr>)
+                })}
+            </tbody>
+
+        </table>
+
+        </section>
+        </FadeIn>
+        </div>
+    );
+}
+
+export default DataPage;

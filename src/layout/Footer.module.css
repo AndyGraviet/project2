@@ -1,0 +1,20 @@
+.mainfooter{
+    width: 100%;
+    height: fit-content;
+    background-color: #01337F;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.footerBig{
+    color: white;
+    margin: 0;
+    font-size: 4vh;
+}
+
+.text{
+    color: white;
+}
