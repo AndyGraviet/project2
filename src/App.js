@@ -5,6 +5,7 @@ import DataPage from './pages/Data';
 import HomePage from './pages/Home';
 import Mainnav from './layout/Mainnav';
 import Footer from './layout/Footer';
+import Testing from './pages/Testing';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/about' element={<AboutPage/>}/>
-        <Route path='/data' element={<DataPage/>}/>
+        {/* <Route path='/data' element={<DataPage/>}/> */}
+        <Route path='/data' element={<Testing/>}/>
       </Routes>
       <Footer/>
     </div>
