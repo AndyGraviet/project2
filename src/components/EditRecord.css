@@ -1,0 +1,30 @@
+.modal{
+    height: fit-content;
+    width: 40vw;
+    background-color: white;
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    margin: auto;
+    z-index: 2;
+    position: fixed;
+    top: 20vh;
+    left: 30vw;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.165);
+}
+
+.exit{
+    position: absolute;
+    top: -5px;
+    right: 15px;
+    color: rgb(95, 95, 95);
+}
+
+.exit:hover{
+    cursor: pointer;
+    color: black;
+}
