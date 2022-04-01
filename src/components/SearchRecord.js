@@ -3,7 +3,7 @@ import './SearchRecord.css';
 function SearchRecord(props){
     return(
         <div className="modal">
-            SEARCH
+            We're sorry, this feature isn't available yet!
             <p className='exit' onClick={props.onCancel}>X</p>
         </div>
     )

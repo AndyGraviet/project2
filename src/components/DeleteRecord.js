@@ -3,7 +3,7 @@ import './DeleteRecord.css';
 function DeleteRecord(props){
     return(
         <div className="modal">
-            DELETE
+            We're sorry, this feature isn't available yet!
             <p className='exit' onClick={props.onCancel}>X</p>
         </div>
     )
