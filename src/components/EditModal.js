@@ -14,9 +14,10 @@ function EditModal(props) {
   const [newState, setNewState] = useState("");
   const [newGender, setNewGender] = useState("");
   const [newRace, setNewRace] = useState("");
-
   const [people, setPeople] = useState([]);
   const peopleCollectionsRef = collection(db, "people");
+
+  
   const createRecord = async () => {
     if ((newDate === "") || (newFirstName === "") || (newLastName === "") || (newAge === 0) || (newCity === "") || (newState === "") || (newGender === "") || (newRace === "") || (newDate === "")){
       alert('You need to fill out all the fields!');
